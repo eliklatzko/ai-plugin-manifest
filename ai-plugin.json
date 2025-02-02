@@ -9,7 +9,7 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://script.google.com/macros/s/AKfycbx0-BusRzkU8CRsH8SayitRa8gIaorgPfF_XIJhww2csJi-6-030vEc6jUQDF53aNI_/exec",
+    "url": "https://raw.githubusercontent.com/eliklatzko/ai-plugin-manifest/main/openapi.json",
     "is_user_authenticated": false
   },
   "logo_url": "https://example.com/logo.png",
