@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Canvas Data",
+  "name_for_model": "canvas_data",
+  "description_for_human": "Fetch your Canvas LMS data such as assignments, events, grades, messages, courses, announcements, and discussions.",
+  "description_for_model": "This plugin provides access to Canvas LMS data through a Google Apps Script endpoint. Use actions like 'events', 'assignments', 'grades', 'messages', 'courses', 'announcements', and 'discussions' to retrieve the respective data.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://script.google.com/macros/s/AKfycbx0-BusRzkU8CRsH8SayitRa8gIaorgPfF_XIJhww2csJi-6-030vEc6jUQDF53aNI_/exec",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://example.com/logo.png",
+  "contact_email": "Eliklatzko@gmail.com",
+  "legal_info_url": "https://docs.google.com/document/d/10Cg_rwRE6nEIxE2AV26NXkfI6rk7Ic3NrfdXJ9vxHj0/edit?tab=t.0"
+}
