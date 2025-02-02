@@ -1,0 +1,53 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Canvas Data API",
+    "version": "1.0.0",
+    "description": "API for fetching Canvas LMS data (assignments, events, grades, messages, courses, announcements, and discussions) via a Google Apps Script endpoint."
+  },
+  "servers": [
+    {
+      "url": "https://script.google.com/macros/s/AKfycbx0-BusRzkU8CRsH8SayitRa8gIaorgPfF_XIJhww2csJi-6-030vEc6jUQDF53aNI_/exec"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Retrieve Canvas data based on action",
+        "parameters": [
+          {
+            "name": "action",
+            "in": "query",
+            "description": "The action to perform. Valid values: events, assignments, grades, messages, courses, announcements, discussions.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of items to return (default is 5).",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 5
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
